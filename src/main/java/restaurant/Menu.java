@@ -1,5 +1,7 @@
 package restaurant;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Calendar;
@@ -36,7 +38,7 @@ public class Menu {
     }
 
     public void isNewItem(MenuItem item) {
-        if (item.getIsNew() == true) {
+        if (item.getIsNew()) {
             System.out.println("NEW!");
         }
 
@@ -51,7 +53,7 @@ public class Menu {
 //    }
 
     public void printMenu() {
-
+        this.menuItems.forEach((menuItem -> System.out.println(menuItem.toString())));
     }
 
     public void menuItem(MenuItem item) {
