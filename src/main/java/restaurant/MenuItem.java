@@ -53,4 +53,8 @@ public class MenuItem {
     public void setIsNew(boolean isNew) {
         this.isNew = isNew;
     }
+
+    public boolean isEqual(MenuItem item) {
+
+    }
 }

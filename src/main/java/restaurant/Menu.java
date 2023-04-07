@@ -2,6 +2,7 @@ package restaurant;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Calendar;
 public class Menu {
     private Date lastUpdated;
     private ArrayList<MenuItem> menuItems = new ArrayList<>();
@@ -25,4 +26,37 @@ public class Menu {
     public void setMenuItems(ArrayList<MenuItem> menuItems) {
         this.menuItems = menuItems;
     }
+
+    public void addItem(MenuItem newItem) {
+        this.menuItems.add(newItem);
+    }
+
+    public void removeItem(MenuItem menuItemToBeRemoved) {
+        this.menuItems.remove(menuItemToBeRemoved);
+    }
+
+    public void isNewItem(MenuItem item) {
+        if (item.getIsNew() == true) {
+            System.out.println("NEW!");
+        }
+
+    }
+
+    public Date dateUpdated () {
+        return lastUpdated;
+    }
+
+//    public void upDate() {
+//
+//    }
+
+    public void printMenu() {
+
+    }
+
+    public void menuItem(MenuItem item) {
+
+    }
+
 }
+
